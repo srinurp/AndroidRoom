@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoftino.room.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person Details"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/person_details" ></TextView>
+
+    <TextView
+        android:id="@+id/name_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/person_details"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/name_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/name_l" ></EditText>
+
+    <TextView
+        android:id="@+id/mobile_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mobile_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mobile_l" ></EditText>
+    <TextView
+        android:id="@+id/email_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/email_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/email_l" ></EditText>
+    <TextView
+        android:id="@+id/lineOne_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/email_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/lineOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/lineOne_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lineOne_l" ></EditText>
+    <TextView
+    android:id="@+id/city_l"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="City"
+    android:layout_marginTop="8dp"
+    app:layout_constraintTop_toBottomOf="@+id/lineOne_l"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/city_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/city_l" ></EditText>
+    <TextView
+        android:id="@+id/country_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/city_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/country_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/country_l" ></EditText>
+    <TextView
+        android:id="@+id/zip_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zip"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/country_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" ></TextView>
+
+    <EditText
+        android:id="@+id/zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/zip_l"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/zip_l" ></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Person"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/zip"
+        android:onClick="addPerson"></Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Person"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/zip"
+        app:layout_constraintHorizontal_bias="0.504"
+        android:onClick="updatePerson"></Button>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        android:onClick="deletePerson"></Button>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Person By Mobile"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/button3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        android:onClick="getPersonByMobile"></Button>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get All"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="getAllPerson"></Button>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Person By City"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintLeft_toRightOf="@+id/button5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="getPersonByCities"></Button>
+</android.support.constraint.ConstraintLayout>
